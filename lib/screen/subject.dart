@@ -1,10 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:page_transition/page_transition.dart';
-import 'package:rsarapp/screen/subject.dart';
 
-class DashBoard extends StatelessWidget {
-  const DashBoard({super.key});
+class Subject extends StatelessWidget {
+  const Subject({super.key});
 
   static const themeColour = Color(0xFF2C6B74);
 
@@ -39,97 +37,88 @@ class DashBoard extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                   const Card(color: themeColour,margin: EdgeInsets.all(15),child: Padding(
+                  const Card(color: themeColour,margin: EdgeInsets.all(15),child: Padding(
                     padding: EdgeInsets.all(12.0),
-                    child: Text("All Subject",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.bold),textAlign: TextAlign.center),
+                    child: Text("Science",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.bold),textAlign: TextAlign.center),
                   )),
-                  Container(margin:  const EdgeInsets.only(left: 13,right: 13,top: 7,bottom: 6),
+                  Container(margin: const EdgeInsets.only(left: 13,right: 13,top: 7,bottom: 6),
                     child: Row(
-                      children:  <Widget>  [
+                      children: const <Widget>  [
                         Expanded(
                           flex: 1,
-                          child: Card(
-                            color: themeColour,child: TextButton(
-                              onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Subject())); },
-                              child: const Text('Science', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
-                              ),
-                            ),
+                          child: Card(color: themeColour,child: Padding(
+                            padding: EdgeInsets.only(top: 20.0,bottom: 20,left: 10,right: 10),
+                            child: Text("Physics",overflow: TextOverflow.ellipsis,
+                              style: TextStyle(color: Colors.white ,fontWeight: FontWeight.bold),textAlign: TextAlign.center,),
+                          ),
                           ),
                         ),
                         Expanded(
                           flex: 1,
-                          child: Card(
-                            color: themeColour,child: TextButton(
-                              onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Subject())); },
-                              child: const Text('English', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
-                              ),
-                            ),
-                          ),
+                          child: Card(color: themeColour,child: Padding(
+                            padding: EdgeInsets.only(top: 20.0,bottom: 20,left: 10,right: 10),
+                            child: Text("Chemistry",overflow: TextOverflow.ellipsis,
+                                style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),textAlign: TextAlign.center),
+                          ),),
                         ),
                       ],
                     ),
                   ),
-                  Container(margin:  const EdgeInsets.only(left: 13,right: 13,top: 7,bottom: 6),
+                  // Container(margin: const EdgeInsets.only(left: 13,right: 13,top: 7,bottom: 6),
+                  //   child: Row(
+                  //     children: const <Widget>  [
+                  //       Expanded(
+                  //         flex: 1,
+                  //         child: Card(color: themeColour,child: Padding(
+                  //           padding: EdgeInsets.only(top: 20.0,bottom: 20,left: 10,right: 10),
+                  //           child: Text("Math ",overflow: TextOverflow.ellipsis,
+                  //             style: TextStyle(color: Colors.white ,fontWeight: FontWeight.bold),textAlign: TextAlign.center,),
+                  //         ),
+                  //         ),
+                  //       ),
+                  //       Expanded(
+                  //         flex: 1,
+                  //         child: Card(color: themeColour,child: Padding(
+                  //           padding: EdgeInsets.only(top: 20.0,bottom: 20,left: 10,right: 10),
+                  //           child: Text("Hindi",overflow: TextOverflow.ellipsis,
+                  //               style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),textAlign: TextAlign.center),
+                  //         ),),
+                  //       ),
+                  //     ],
+                  //   ),
+                  // ),
+                  // Container(margin: const EdgeInsets.only(left: 13,right: 13,top: 7,bottom: 6),
+                  //   child: Row(
+                  //     children: const <Widget>  [
+                  //       Expanded(
+                  //         flex: 1,
+                  //         child: Card(color: themeColour,child: Padding(
+                  //           padding: EdgeInsets.only(top: 20.0,bottom: 20,left: 10,right: 10),
+                  //           child: Text("Mathematics",overflow: TextOverflow.ellipsis,
+                  //             style: TextStyle(color: Colors.white ,fontWeight: FontWeight.bold),textAlign: TextAlign.center,),
+                  //         ),
+                  //         ),
+                  //       ),
+                  //       Expanded(
+                  //         flex: 1,
+                  //         child: Card(color: themeColour,child: Padding(
+                  //           padding: EdgeInsets.only(top: 20.0,bottom: 20,left: 10,right: 10),
+                  //           child: Text("Sanskrit",overflow: TextOverflow.ellipsis,
+                  //               style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),textAlign: TextAlign.center),
+                  //         ),),
+                  //       ),
+                  //     ],
+                  //   ),
+                  // ),
+                  Container(margin: const EdgeInsets.only(left: 13,right: 13,top: 7,bottom: 6),
                     child: Row(
-                      children:  <Widget>  [
+                      children: const <Widget>  [
                         Expanded(
                           flex: 1,
-                          child: Card(
-                            color: themeColour,child: TextButton(
-                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Subject())); },
-                            child: const Text('English', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
-                            ),
-                          ),
-                          ),
-                        ),
-                        Expanded(
-                          flex: 1,
-                          child: Card(
-                            color: themeColour,child: TextButton(
-                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Subject())); },
-                            child: const Text('Hindi', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
-                            ),
-                          ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(margin:  const EdgeInsets.only(left: 13,right: 13,top: 7,bottom: 6),
-                    child: Row(
-                      children:  <Widget>  [
-                        Expanded(
-                          flex: 1,
-                          child: Card(
-                            color: themeColour,child: TextButton(
-                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Subject())); },
-                            child: const Text('Mathematics', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
-                            ),
-                          ),
-                          ),
-                        ),
-                        Expanded(
-                          flex: 1,
-                          child: Card(
-                            color: themeColour,child: TextButton(
-                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Subject())); },
-                            child: const Text('Sanskrit', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
-                            ),
-                          ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(margin:  const EdgeInsets.only(left: 13,right: 13,top: 7,bottom: 6),
-                    child: Row(
-                      children:  <Widget>  [
-                        Expanded(
-                          child: Card(
-                            color: themeColour,child: TextButton(
-                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Subject())); },
-                            child: const Text('Social Studies', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
-                            ),
+                          child: Card(color: themeColour,child: Padding(
+                            padding: EdgeInsets.only(top: 20.0,bottom: 20,left: 10,right: 10),
+                            child: Text(" Biology",overflow: TextOverflow.ellipsis,
+                              style: TextStyle(color: Colors.white ,fontWeight: FontWeight.bold),textAlign: TextAlign.center,),
                           ),
                           ),
                         ),

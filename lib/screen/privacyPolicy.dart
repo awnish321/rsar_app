@@ -15,11 +15,11 @@ class PrivacyPolicy extends StatefulWidget {
 
 class _PrivacyPolicyState extends State<PrivacyPolicy> {
 
-  List<dynamic>
-  users = [];
+  List<dynamic>users = [];
   static const themeColour = Color(0xFF2C6B74);
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)
+  {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Rachna Sagar"),
@@ -34,7 +34,8 @@ class _PrivacyPolicyState extends State<PrivacyPolicy> {
             title: Text(email),
           );
         },
-      )),
+      )
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: fetchUser,
       ),

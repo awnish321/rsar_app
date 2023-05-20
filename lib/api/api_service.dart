@@ -1,6 +1,7 @@
 import 'dart:developer';
 import 'package:http/http.dart' as http;
 import 'package:rsarapp/model/ClassModel.dart';
+import 'package:rsarapp/model/TestModel.dart';
 import '../model/UserModel.dart';
 import 'constants.dart';
 
@@ -34,6 +35,20 @@ class ApiService {
     } catch (e) {
       log(e.toString());
     }
+  }
+
+  Future<TestModel?> getTestList() async {
+    try {
+      final url = Uri .parse(ApiConstants.baseUrl3);
+      var response = await http.get(url);
+      if (response.statusCode == 200) {
+        TestModel model = testModelFromJson(response.body);
+        return model;
+      }
+    } catch (e) {
+      log(e.toString());
+    }
+    return null;
   }
 
 }

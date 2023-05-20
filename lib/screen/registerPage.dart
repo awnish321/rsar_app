@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:rsarapp/screen/privacyPolicy.dart';
 import 'package:rsarapp/screen/testPage.dart';
-
 import '../main.dart';
 import 'dashBoard.dart';
 import 'forgetDetail.dart';
