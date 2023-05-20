@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
-import 'class.dart';
+import 'package:rsarapp/screen/subject.dart';
 
-class DashBoard extends StatelessWidget {
-  const DashBoard({super.key});
+class Class extends StatelessWidget {
+  const Class({super.key});
 
   static const themeColour = Color(0xFF2C6B74);
 
@@ -39,9 +39,9 @@ class DashBoard extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                   const Card(color: themeColour,margin: EdgeInsets.all(15),child: Padding(
+                  const Card(color: themeColour,margin: EdgeInsets.all(15),child: Padding(
                     padding: EdgeInsets.all(12.0),
-                    child: Text("All Class",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.bold),textAlign: TextAlign.center),
+                    child: Text("All Subject",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.bold),textAlign: TextAlign.center),
                   )),
                   Container(margin:  const EdgeInsets.only(left: 13,right: 13,top: 7,bottom: 6),
                     child: Row(
@@ -50,34 +50,8 @@ class DashBoard extends StatelessWidget {
                           flex: 1,
                           child: Card(
                             color: themeColour,child: TextButton(
-                              onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Class())); },
-                              child: const Text('Class 1', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
-                              ),
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          flex: 1,
-                          child: Card(
-                            color: themeColour,child: TextButton(
-                              onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Class())); },
-                              child: const Text('Class 2', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(margin:  const EdgeInsets.only(left: 13,right: 13,top: 7,bottom: 6),
-                    child: Row(
-                      children:  <Widget>  [
-                        Expanded(
-                          flex: 1,
-                          child: Card(
-                            color: themeColour,child: TextButton(
-                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Class())); },
-                            child: const Text('Class 3', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
+                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Subject())); },
+                            child: const Text('Science', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
                             ),
                           ),
                           ),
@@ -86,8 +60,8 @@ class DashBoard extends StatelessWidget {
                           flex: 1,
                           child: Card(
                             color: themeColour,child: TextButton(
-                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Class())); },
-                            child: const Text('Class 4', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
+                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Subject())); },
+                            child: const Text('English', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
                             ),
                           ),
                           ),
@@ -102,8 +76,8 @@ class DashBoard extends StatelessWidget {
                           flex: 1,
                           child: Card(
                             color: themeColour,child: TextButton(
-                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Class())); },
-                            child: const Text('Class 5', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
+                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Subject())); },
+                            child: const Text('English', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
                             ),
                           ),
                           ),
@@ -112,34 +86,8 @@ class DashBoard extends StatelessWidget {
                           flex: 1,
                           child: Card(
                             color: themeColour,child: TextButton(
-                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Class())); },
-                            child: const Text('Class 6', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
-                            ),
-                          ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(margin:  const EdgeInsets.only(left: 13,right: 13,top: 7,bottom: 6),
-                    child: Row(
-                      children:  <Widget>  [
-                        Expanded(
-                          flex: 1,
-                          child: Card(
-                            color: themeColour,child: TextButton(
-                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Class())); },
-                            child: const Text('Class 7', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
-                            ),
-                          ),
-                          ),
-                        ),
-                        Expanded(
-                          flex: 1,
-                          child: Card(
-                            color: themeColour,child: TextButton(
-                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Class())); },
-                            child: const Text('Class 8', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
+                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Subject())); },
+                            child: const Text('Hindi', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
                             ),
                           ),
                           ),
@@ -154,8 +102,8 @@ class DashBoard extends StatelessWidget {
                           flex: 1,
                           child: Card(
                             color: themeColour,child: TextButton(
-                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Class())); },
-                            child: const Text('Class 9', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
+                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Subject())); },
+                            child: const Text('Mathematics', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
                             ),
                           ),
                           ),
@@ -164,8 +112,23 @@ class DashBoard extends StatelessWidget {
                           flex: 1,
                           child: Card(
                             color: themeColour,child: TextButton(
-                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Class())); },
-                            child: const Text('Class 10', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
+                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Subject())); },
+                            child: const Text('Sanskrit', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
+                            ),
+                          ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(margin:  const EdgeInsets.only(left: 13,right: 13,top: 7,bottom: 6),
+                    child: Row(
+                      children:  <Widget>  [
+                        Expanded(
+                          child: Card(
+                            color: themeColour,child: TextButton(
+                            onPressed: () { Navigator.push(context, PageTransition(type: PageTransitionType.fade, child:  const Subject())); },
+                            child: const Text('Social Studies', style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis,textAlign: TextAlign.center,
                             ),
                           ),
                           ),
